@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1745199508" />
+    <testcase name="Pipeline_test" classname="Pipeline_Test" file="C:\Users\mertmihci\Desktop\odtu\EE446\lab4\Pipeline_Test.py" lineno="233" time="0.28757715225219727" sim_time_ns="346000.001" ratio_time="1203155.390789069" />
+  </testsuite>
+</testsuites>
