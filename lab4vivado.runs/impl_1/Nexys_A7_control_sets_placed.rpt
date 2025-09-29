@@ -1,0 +1,357 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Apr 21 04:20:51 2025
+| Host         : MertMihci running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Nexys_A7_control_sets_placed.rpt
+| Design       : Nexys_A7
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   279 |
+|    Minimum number of control sets                        |   279 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     8 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   279 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |   256 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    22 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             451 |          217 |
+| Yes          | No                    | No                     |            2112 |         1617 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             544 |          348 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+-------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+--------------+
+|     Clock Signal     |                     Enable Signal                     |                        Set/Reset Signal                       | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+-------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+--------------+
+|  CLK100MHZ_IBUF_BUFG |                                                       |                                                               |                3 |              5 |         1.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_33[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_rep__3_1[0]   |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_19[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_100[0]        |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_28[0]         |                                                               |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_37[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_40[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_42[0]         |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_43[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_20[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_109[0]        |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_12[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_44[0]         |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_102[0]        |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_1[0]          |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_106[0]        |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_29[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_35[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_5[0]          |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_50[0]         |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_34[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_15[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_45[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_25[0]         |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_51[0]         |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_52[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_53[0]         |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_104[0]        |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_107[0]        |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_54[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_55[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_11[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_2[0]          |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_23[0]         |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_75[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_0[0]          |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_105[0]        |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_17[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_30[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_31[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_13[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_3[0]          |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_32[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_36[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_21[0]         |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_38[0]         |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_108[0]        |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_41[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_14[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_27[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_4[0]          |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_46[0]         |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_47[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_24[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_48[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_49[0]         |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_10[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/E[0]                     |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_101[0]        |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_110[0]        |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_103[0]        |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_18[0]         |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_22[0]         |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_39[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_26[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_16[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep__11_0[0]  |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_79[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_62[0]         |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_68[0]         |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_71[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_74[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_58[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_6[0]          |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_82[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_63[0]         |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_95[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_64[0]         |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_77[0]         |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_96[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_7[0]          |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_81[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep_3[0]      |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_87[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep_4[0]      |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep__11_2[0]  |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_73[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep__3_3[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_94[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_56[0]         |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_70[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_88[0]         |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_90[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_99[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep__7_0[0]   |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_60[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_93[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep__11_3[0]  |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_65[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep_0[0]      |                                                               |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_66[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_86[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_91[0]         |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_67[0]         |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep__3_0[0]   |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep__7_2[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_97[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep__7_3[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep__7_4[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_89[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_8[0]          |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_57[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_59[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_76[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_61[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_83[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_72[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_85[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_92[0]         |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_78[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_98[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep__11_4[0]  |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_9[0]          |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_69[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_80[0]         |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_84[0]         |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep_2[0]      |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep__3_2[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[0]_rep__3_4[0]   |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_36[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_16[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_3[0]          |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_0[0]  |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_19[0] |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_29[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_13[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_30[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_37[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_41[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_23[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_34[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_1[0]          |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_39[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_20[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_11[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_10[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_35[0] |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_42[0] |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_0[0]          |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_32[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_4[0]  |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_17[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_5[0]  |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_6[0]  |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_3[0]  |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__10_2[0]  |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_31[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_2[0]          |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_12[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_14[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_38[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_26[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_40[0] |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_21[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_18[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_25[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_24[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_2[0]  |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_27[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_7[0]  |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_28[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__10_0[0]  |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_8[0]  |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_9[0]  |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_1[0]  |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_10[0] |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__10_3[0]  |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_15[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_33[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_11[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_12[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_13[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__10_4[0]  |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__16_22[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_18[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_2[0]  |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[3]_rep__4_3[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_9[0]  |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[3]_rep__4_4[0]   |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[4]_rep__0_0[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[4]_rep__0_2[0]   |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__6_3[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[4]_rep__0_1[0]   |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_6[0]  |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__2_2[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_8[0]  |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_21[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_16[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_20[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_14[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_17[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_3[0]  |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__6_2[0]   |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_5[0]  |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__2_0[0]   |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[3]_rep__4_1[0]   |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__2_4[0]   |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[3]_rep__4_2[0]   |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_15[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_4[0]  |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_22[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__2_3[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__6_0[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__6_4[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_7[0]  |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[1]_rep__17_19[0] |                                                               |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[4]_rep__0_3[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[5]_rep__0_1[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[5]_rep__2_0[0]   |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[6]_6[0]          |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_1[0]          |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[4]_rep__0_4[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[6]_4[0]          |                                                               |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[6]_8[0]          |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[5]_rep__0_0[0]   |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[5]_rep__2_1[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[6]_5[0]          |                                                               |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_5[0]          |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[4]_rep__0_6[0]   |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[6]_0[0]          |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_8[0]          |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[6]_1[0]          |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_rep_1[0]      |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[4]_rep__0_7[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[5]_rep__1_0[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_6[0]          |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[4]_rep__0_5[0]   |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[6]_7[0]          |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_2[0]          |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[6]_9[0]          |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[5]_rep__1_1[0]   |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[6]_2[0]          |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_7[0]          |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_0[0]          |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_3[0]          |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[6]_3[0]          |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_4[0]          |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[6]_10[0]         |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_rep__1_1[0]   |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_rep__2_1[0]   |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_rep__2_2[0]   |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_rep__2_4[0]   |                                                               |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_rep__3_0[0]   |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_rep__2_3[0]   |                                                               |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_rep__3_2[0]   |                                                               |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/ALUM/OUT_reg[7]_rep__2_5[0]   |                                                               |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/IR/OUT_reg[0]_0[0]            | my_computer/my_controller/condRegE/genblk1[0].out_reg[0]_0[0] |               26 |             32 |         1.23 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/IR/E[0]                       | debouncer_0/buttons[0]                                        |               17 |             32 |         1.88 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/WA3WReg/E[0]                  | debouncer_0/buttons[0]                                        |               19 |             32 |         1.68 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/WA3WReg/OUT_reg[0]_29[0]      | debouncer_0/buttons[0]                                        |               16 |             32 |         2.00 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/WA3WReg/OUT_reg[0]_21[0]      | debouncer_0/buttons[0]                                        |               20 |             32 |         1.60 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/WA3WReg/OUT_reg[0]_23[0]      | debouncer_0/buttons[0]                                        |               16 |             32 |         2.00 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/WA3WReg/OUT_reg[0]_24[0]      | debouncer_0/buttons[0]                                        |               21 |             32 |         1.52 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/WA3WReg/OUT_reg[0]_27[0]      | debouncer_0/buttons[0]                                        |               22 |             32 |         1.45 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/WA3WReg/OUT_reg[0]_30[0]      | debouncer_0/buttons[0]                                        |               18 |             32 |         1.78 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/WA3WReg/OUT_reg[0]_26[0]      | debouncer_0/buttons[0]                                        |               23 |             32 |         1.39 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/WA3WReg/OUT_reg[0]_28[0]      | debouncer_0/buttons[0]                                        |               21 |             32 |         1.52 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/WA3WReg/OUT_reg[0]_25[0]      | debouncer_0/buttons[0]                                        |               26 |             32 |         1.23 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/WA3WReg/OUT_reg[0]_22[0]      | debouncer_0/buttons[0]                                        |               19 |             32 |         1.68 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/WA3WReg/OUT_reg[2]_4[0]       | debouncer_0/buttons[0]                                        |               20 |             32 |         1.60 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/WA3WReg/OUT_reg[1]_5[0]       | debouncer_0/buttons[0]                                        |               24 |             32 |         1.33 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/WA3WReg/OUT_reg[2]_3[0]       | debouncer_0/buttons[0]                                        |               25 |             32 |         1.28 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/WA3WReg/OUT_reg[2]_2[0]       | debouncer_0/buttons[0]                                        |               15 |             32 |         2.13 |
+|  CLK100MHZ_IBUF_BUFG |                                                       | mssd_0/idx_0                                                  |                9 |             32 |         3.56 |
+|  CLK100MHZ_IBUF_BUFG | debouncer_0/genblk1[0].count_reg[0]0                  |                                                               |                8 |             32 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | debouncer_0/genblk1[4].count[4][0]_i_1_n_0            |                                                               |                8 |             32 |         4.00 |
+|  buttons_BUFG[4]     |                                                       | my_computer/my_controller/condRegE/genblk1[0].out_reg[0]      |               87 |            126 |         1.45 |
+|  buttons_BUFG[4]     |                                                       | debouncer_0/buttons[0]                                        |              121 |            293 |         2.42 |
++----------------------+-------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+--------------+
+
+

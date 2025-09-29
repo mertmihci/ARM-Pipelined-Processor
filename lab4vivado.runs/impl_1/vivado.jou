@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Apr 21 04:20:14 2025
+# Process ID: 15540
+# Current directory: C:/Users/mertmihci/Desktop/odtu/EE446/lab4/lab4vivado/lab4vivado.runs/impl_1
+# Command line: vivado.exe -log Nexys_A7.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Nexys_A7.tcl -notrace
+# Log file: C:/Users/mertmihci/Desktop/odtu/EE446/lab4/lab4vivado/lab4vivado.runs/impl_1/Nexys_A7.vdi
+# Journal file: C:/Users/mertmihci/Desktop/odtu/EE446/lab4/lab4vivado/lab4vivado.runs/impl_1\vivado.jou
+# Running On        :MertMihci
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+# CPU Frequency     :2688 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :16867 MB
+# Swap memory       :6442 MB
+# Total Virtual     :23309 MB
+# Available Virtual :7096 MB
+#-----------------------------------------------------------
+source Nexys_A7.tcl -notrace
